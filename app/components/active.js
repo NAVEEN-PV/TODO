@@ -2,6 +2,6 @@ import Component from '@ember/component';
 import {filterBy} from '@ember/object/computed'
 
 export default Component.extend ({
-    completed: filterBy("model","isCompleted",false),
+    active: filterBy("model","isCompleted",false),
     
 });

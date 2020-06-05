@@ -27,7 +27,7 @@ export default Controller.extend({
             event.preventDefault();
             this.store.findRecord('todo', params.id).then(function(todo){
                 todo.get('isCompleted');
-                todo.set('isCompleted',false);
+                todo.set('isCompleted',true);
                 todo.save();
             })
           }
